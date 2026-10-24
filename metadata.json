@@ -1,0 +1,6 @@
+{
+  "name": "Koyi Turanci - Learn English for Hausa Speakers",
+  "description": "An interactive Android app for Hausa speakers to master English through games, daily vocabulary, pronunciation guides, and sentence building.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

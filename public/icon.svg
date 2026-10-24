@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064e3b" />
+      <stop offset="100%" stop-color="#065f46" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <linearGradient id="bookGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#e2e8f0" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background Rounded Squircle -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+  
+  <!-- Subtle inner border ring -->
+  <rect x="16" y="16" width="480" height="480" rx="96" fill="none" stroke="#34d399" stroke-opacity="0.25" stroke-width="4" />
+  
+  <!-- Speech Bubble Backdrop -->
+  <path d="M120 180 C120 130 160 100 230 100 L282 100 C352 100 392 130 392 180 C392 230 352 260 282 260 L240 260 L180 300 L195 260 L180 260 C140 260 120 230 120 180 Z" 
+        fill="url(#goldGrad)" opacity="0.95" />
+  
+  <!-- "EN / HA" Text within Speech Bubble -->
+  <text x="210" y="195" font-family="'Outfit', system-ui, sans-serif" font-weight="800" font-size="44" fill="#1e293b" text-anchor="middle">EN</text>
+  <text x="260" y="195" font-family="'Outfit', system-ui, sans-serif" font-weight="700" font-size="28" fill="#78350f" text-anchor="middle">⇄</text>
+  <text x="310" y="195" font-family="'Outfit', system-ui, sans-serif" font-weight="800" font-size="44" fill="#1e293b" text-anchor="middle">HA</text>
+  
+  <!-- Open Book Base -->
+  <g transform="translate(106, 270)">
+    <!-- Book Spine Glow -->
+    <path d="M150 40 L150 160" stroke="#10b981" stroke-width="8" stroke-linecap="round" />
+    <!-- Left Page -->
+    <path d="M150 50 C110 30 50 35 10 45 L10 155 C50 145 110 140 150 160 Z" fill="url(#bookGrad)" />
+    <!-- Right Page -->
+    <path d="M150 50 C190 30 250 35 290 45 L290 155 C250 145 190 140 150 160 Z" fill="url(#bookGrad)" />
+    <!-- Book lines on left -->
+    <line x1="35" y1="75" x2="125" y2="70" stroke="#94a3b8" stroke-width="5" stroke-linecap="round" />
+    <line x1="35" y1="100" x2="115" y2="95" stroke="#94a3b8" stroke-width="5" stroke-linecap="round" />
+    <line x1="35" y1="125" x2="105" y2="120" stroke="#94a3b8" stroke-width="5" stroke-linecap="round" />
+    <!-- Book lines on right -->
+    <line x1="175" y1="70" x2="265" y2="75" stroke="#10b981" stroke-width="5" stroke-linecap="round" />
+    <line x1="175" y1="95" x2="255" y2="100" stroke="#10b981" stroke-width="5" stroke-linecap="round" />
+    <line x1="175" y1="120" x2="245" y2="125" stroke="#10b981" stroke-width="5" stroke-linecap="round" />
+  </g>
+  
+  <!-- Small Star Badge -->
+  <circle cx="390" cy="120" r="28" fill="#ffffff" />
+  <polygon points="390,102 396,116 411,116 399,125 403,139 390,130 377,139 381,125 369,116 384,116" fill="#f59e0b" />
+</svg>
